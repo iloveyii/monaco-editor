@@ -6,9 +6,11 @@
   "dependencies": {
     "monaco-editor": "^0.21.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "serve": "^11.3.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve ."
   },
   "keywords": [],
   "author": "",
