@@ -10,6 +10,17 @@ var jsCode = [
   "};",
 ].join("\n");
 
+var reactCode = [
+  "class App extends Component {",
+  "	constructor() {",
+  "		super();",
+  "		this.state = {",
+  "		  name: 'React' ",
+  "		};",
+  "	}",
+  "}",
+].join("\n");
+
 (function () {
   setTimeout(() => {
     var editor = monaco.editor.create(document.getElementById("editor"), {
@@ -23,7 +34,7 @@ var jsCode = [
     var editorTutorial = monaco.editor.create(
       document.getElementById("tutorial"),
       {
-        value: jsCode,
+        value: reactCode,
         language: "javascript",
         height: "50vh",
         width: "100%",
