@@ -10,7 +10,8 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "serve ."
+    "start": "serve .",
+    "build": "cp node_modules/monaco-editor . -Rf"
   },
   "keywords": [],
   "author": "",

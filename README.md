@@ -9,3 +9,9 @@ This is a web based editor based on monaco.
 - Monaco based
 - Two sections i.e editor and tutorial
 - Resizable
+
+## Install
+
+- Install `npm i`
+- Build `npm run build`
+- Start `npm start`
