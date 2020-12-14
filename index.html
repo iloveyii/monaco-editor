@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor</title>
+    <link
+      data-name="vs/editor/editor.main"
+      rel="stylesheet"
+      href="node_modules/monaco-editor/min/vs/editor/editor.main.css"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      #editor,
+      #tutorial {
+        display: inline-block;
+        width: 49%;
+        height: 95%;
+      }
+      header {
+        height: 4%;
+        display: block;
+      }
+      #x {
+        height: 1%;
+        display: block;
+        border-bottom: 5px solid #aaaaaa;
+        cursor: row-resize;
+      }
+      #container {
+        height: 80vh;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="controls">
+        <button id="btn-editor">Editor</button>
+        <button id="btn-tutorial">Tutorial</button>
+      </div>
+    </header>
+    <div id="x"></div>
+    <div id="container">
+      <div id="editor" style="display: inline-block"></div>
+      <div id="tutorial" style="display: inline-block"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.8.3.min.js"
+      integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+      var require = { paths: { vs: "node_modules/monaco-editor/min/vs" } };
+    </script>
+    <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+    <script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+
+    <script src="js/editor.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/buttons.js"></script>
+  </body>
+</html>
